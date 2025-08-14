@@ -1,0 +1,389 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); 
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body,html{
+            height: 100%;
+            width: 100%;
+        }
+        body{
+            font-family: 'Poppins', sans-serif;
+            background: #FFFEFE;
+        }
+        #main{
+            height: 100%;
+            width: 100%;
+        }
+        #side_manu{
+            height: 100%;
+            width: 16%;
+            float: left;
+        }
+        #logo{
+            height: 10%;
+            width: 100%;
+            color: #232322;
+            text-align: center;
+            padding-top: 10px;
+        }
+        #logo h2{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        #logo h2 span{
+            font-weight: 500;
+            font-size: 30px;
+        }
+        #manu{
+            height: 90%;
+            width: 100%;
+        }
+        #manu ul{
+            list-style: none;
+        }
+        #manu ul li{
+            height: 50px;
+            width: 100%;
+            line-height: 50px;
+        }
+        #manu ul li a{
+            text-decoration: none;
+            color: #232322;
+            font-size: 16px;
+            font-weight: 400;
+            display: block;
+            padding-left: 25px;
+            transition: 0.3s linear;
+        }
+        #manu ul li a:hover{
+            color: #000000;
+            font-weight: 600;
+        }
+        #manu ul li a .active{
+            color: #000000;
+            font-weight: 600;
+        }
+        #right_container{
+            height: 100%;
+            width: 15%;
+            margin-right: 20px;
+            float: right;
+        }
+        #profile{
+            height: 200px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            background: #eeeeee;
+            border-radius: 10px;
+            padding-top:10px ;
+            padding-bottom: 10px;
+        }
+        #profile_img{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+        #profile_img img{
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+        }
+        #profile_name{
+            height: 50px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #profile_name h2{
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: 20px;
+        }
+        #profile_name span{
+            font-size: 12px;
+            font-weight: 400;
+            color: #232322;
+            margin-top: 10px;
+        }
+        #profile_name span i{
+            font-size: 16px;
+            margin-left: 48px;
+            cursor: pointer;
+        }
+        #income_graph{
+            height: 140px;
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 15px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        }
+        #income_graph .header_tag{
+            height: 30px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        #income_graph .header_tag h2{
+            font-size: 16px;
+            font-weight: 500;
+        }
+        #income_graph .header_tag select{
+            height: 20px;
+            width: 80px;
+            outline: none;
+            border-radius: 5px;
+            background: #F9F8F9;
+            font-size: 12px;
+            font-weight: 400;
+            color: #232322;
+            cursor: pointer;
+        }
+        #graph{
+            height: 90px;
+            width: 100%;
+            margin-top: 2px;
+        }
+        #expence_graph{
+            height: 140px;
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        }
+        #expence_graph .header_tag{
+            height: 30px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        #expence_graph .header_tag h2{
+            font-size: 16px;
+            font-weight: 500;
+        }
+        #expence_graph .header_tag select{
+            height: 20px;
+            width: 80px;
+            outline: none;
+            border-radius: 5px;
+            background: #F9F8F9;
+            font-size: 12px;
+            font-weight: 400;
+            color: #232322;
+            cursor: pointer;
+        }
+        #expence_canvas{
+            height: 90px;
+            width: 100%;
+            margin-top: 2px;
+        }
+        #transectionaddbtn{
+            height: 60px;
+            width: 100%;
+            background: #FC7D7A;
+            border-radius: 10px;
+            margin-top: 20px;
+            border: none;
+            outline: none;
+            font-size: 14px;
+            font-weight: 500;
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+        #transectionaddbtn i{
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        #middle_container{
+            height: 100%;
+            width: 67%;
+            float: center;
+            margin-left: 16%;
+        }
+        nav{
+            width: 100%;
+            height: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 50px;
+        }
+        nav .search{
+            height: 40px;
+            width:50% ;
+            float: left;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            border: 1.5px solid #dadada;
+            border-radius: 20px;
+        }
+        nav .search i{
+            font-size: 14px;
+            margin-right: 10px;
+        }
+        nav .search input{
+            height: 100%;
+            width: 100%;
+            outline: none;
+            border: none;
+            font-size: 14px;
+            font-weight: 400;
+            color: #232322;
+        }
+        nav .elem{
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        nav .elem a{
+            text-decoration: none;
+            color: #232322;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        nav .elem a:hover{
+            color: #000000;
+            font-weight: 500;
+        }
+        .category_container{
+            height: 20%;
+            width: 100%;
+            padding-left: 25px;
+        }
+        .category_container h3{
+            font-size: 16px;
+            font-weight: 500;
+            padding-left: 20px;
+            padding-top: 10px;
+        }
+        .category_container .category_list{
+            height: 75%;
+            width: 95%;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: #FFFFFF;
+            overflow: auto;
+        }
+        .category_container .category_list::-webkit-scrollbar{
+            display: none;
+        }
+        .category_list .first_list{
+            height: 50px;
+            min-width: 150px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            background: #FC7D7A;
+        }
+        .category_list #seconed_categories{
+            background: #50CECE;
+        }
+        .category_list .first_list i{
+            font-size: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .category_list .first_list h4{
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .category_list .first_list .sub-category{
+            font-size: 12px;
+            font-weight: 400;
+        }
+        #add_categories{
+            height: 50px;
+            min-width: 110px;
+            border-radius: 10px;
+            background: #FC7D7A;
+            border: none;
+            outline: none;
+            font-size: 14px;
+            font-weight: 500;
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+        #add_categories i{
+            font-size: 19px;
+            margin-right: 5px;
+        }
+        .transection_container{
+            height: 70%;
+            width: 100%;
+            padding-left: 25px;
+        }
+        .transection_container h3{
+            font-size: 16px;
+            font-weight: 500;
+            padding-left: 20px;
+            padding-top: 10px;
+        }
+        .transection_container .transection_list{
+            height: 80%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding-left: 25px;
+            padding-right: 20px;
+            color: rgb(46, 46, 46);
+            overflow: auto;
+            margin-top: 20px;
+        }
+        .transection_container .transection_list::-webkit-scrollbar{
+            display: none;
+        }
+        .transection_container .transection_list .first_trans_list{
+            height: 50px;
+            width: 100%;
+            border-radius: 5px;
+            padding: 5px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: -20px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+        }
+        .transection_container .transection_list .first_trans_list .left{
+            height: 100%;
+            width: 80%;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .transection_container .transection_list .first_trans_list .left i{
+            background-color: #cfebeb;
+            border-radius: 2px;
+            padding: 2px 2px;
+            font-size: 20px;
+            color: #50CECE;
+        }
+        .transection_container .transection_list .first_trans_list .left h4{
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .transection_container .transection_list .first_trans_list .left .sub-category{
+            font-size: 12px;
+            font-weight: 400;
+        }
+        .transection_container .transection_list .first_trans_list .right{
+            font-size: 14px;
+        }
+        

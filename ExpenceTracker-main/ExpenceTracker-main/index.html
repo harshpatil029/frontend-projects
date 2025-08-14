@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Expence Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="side_manu">
+            <div id="logo">
+                <h2><span>E</span>xpence<span>T</span>racker</h2>
+            </div>
+            <div id="manu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Income</a></li>
+                    <li><a href="#">Expence</a></li>
+                    <li><a href="#">Report</a></li>
+                    <li><a href="#">Setting</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="right_container">
+            <div id="profile">
+                <div id="profile_img">
+                    <img src="SamplePhoto_6.jpg" alt="">
+                </div>
+                <div id="profile_name">
+                    <h2>Priya Andhare</h2>
+                    <span>Profile<i class="ri-pencil-line"></i></span>
+                    <span>Setting<i class="ri-settings-2-line"></i></span>
+                    <span>Wallet<i class="ri-wallet-3-line"></i></span>
+                </div>
+            </div>
+            <div id="income_graph">
+                <div class="header_tag">
+                    <h2>Income</h2>
+                    <select id="income_categories">
+                        <option value="all">All</option>
+                        <option value="salary">Salary</option>
+                        <option value="business">Business</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <canvas id="graph">
+
+                </canvas>
+            </div>
+            <div id="expence_graph">
+                <div class="header_tag">
+                    <h2>Expence</h2>
+                    <select id="expence_categories">
+                        <option value="all">All</option>
+                        <option value="salary">Salary</option>
+                        <option value="business">Business</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <canvas id="expence_canvas">
+
+                </canvas>
+            </div>
+            <button id="transectionaddbtn"><i class="ri-add-fill"></i>Add Transections</button>
+        </div>
+        <div id="middle_container">
+            <nav>
+                <div class="search">
+                    <i class="ri-search-line"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="elem">
+                    <a href="#">Calender</a>
+                    <a href="#">Notification</a>
+                </div>
+            </nav>
+            <div class="category_container">
+                <h3>Categories</h3>
+                <div class="category_list">
+                    <div class="first_list">
+                        <i class="ri-home-5-line"></i>
+                        <h4>Housing Load <br> 
+                            <div class="sub-category">$45,000</div>
+                        </h4>
+                    </div>
+                    <div class="first_list" id="seconed_categories">
+                        <i class="ri-book-open-line"></i>
+                        <h4>Education <br> 
+                            <div class="sub-category">$25,000</div>
+                        </h4>
+                    </div>
+                    <button id="add_categories"><i class="ri-add-fill"></i>Add New</button>
+                </div>
+            </div>
+            <div class="transection_container">
+                <h3>Transections</h3>
+                <div class="transection_list">
+                    <div class="first_trans_list">
+                        <div class="left">
+                            <i class="ri-cup-fill"></i>
+                            <h4>Cafe Holiday <br> 
+                                <div class="sub-category">$45,000</div>
+                            </h4>
+                        </div>
+                        <div class="right">
+                            <span>-$49.58</span>
+                        </div>
+                    </div>
+                    <div class="first_trans_list">
+                        <div class="left">
+                            <i style="color: yellow;
+                            background-color: rgb(250, 250, 229);" class="ri-customer-service-fill"></i>
+                            <h4>Headphones <br> 
+                                <div class="sub-category">$45,000</div>
+                            </h4>
+                        </div>
+                        <div class="right">
+                            <span>-$49.58</span>
+                        </div>
+                    </div>
+                    <div class="first_trans_list">
+                        <div class="left">
+                            <i style="color: #FC7D7A;
+                            background-color: #f3cccb;" class="ri-shopping-bag-3-fill"></i>
+                            <h4>Shopping <br> 
+                                <div class="sub-category">$45,000</div>
+                            </h4>
+                        </div>
+                        <div class="right">
+                            <span>-$49.58</span>
+                        </div>
+                    </div>
+                    <div class="first_trans_list">
+                        <div class="left">
+                            <i class="ri-timer-line"></i>
+                            <h4>Watch <br> 
+                                <div class="sub-category">$45,000</div>
+                            </h4>
+                        </div>
+                        <div class="right">
+                            <span>-$49.58</span>
+                        </div>
+                    </div>
+                    <div class="first_trans_list">
+                        <div class="left">
+                            <i class="ri-timer-line"></i>
+                            <h4>Watch <br> 
+                                <div class="sub-category">$45,000</div>
+                            </h4>
+                        </div>
+                        <div class="right">
+                            <span>-$49.58</span>
+                        </div>
+                    </div>
+                    <div class="first_trans_list">
+                        <div class="left">
+                            <i class="ri-timer-line"></i>
+                            <h4>Watch <br> 
+                                <div class="sub-category">$45,000</div>
+                            </h4>
+                        </div>
+                        <div class="right">
+                            <span>-$49.58</span>
+                        </div>
+                    </div>
+                    <div class="first_trans_list">
+                        <div class="left">
+                            <i class="ri-timer-line"></i>
+                            <h4>Watch <br> 
+                                <div class="sub-category">$45,000</div>
+                            </h4>
+                        </div>
+                        <div class="right">
+                            <span>-$49.58</span>
+                        </div>
+                    </div>
+                    <div class="first_trans_list">
+                        <div class="left">
+                            <i class="ri-timer-line"></i>
+                            <h4>Watch <br> 
+                                <div class="sub-category">$45,000</div>
+                            </h4>
+                        </div>
+                        <div class="right">
+                            <span>-$49.58</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
