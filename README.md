@@ -17,13 +17,6 @@ Each project demonstrates different web development concepts, design techniques,
 
 ---
 
-### 🎵 Music Player
-- A simple and elegant music player web app.
-- Play, pause, skip, and adjust volume for songs.
-- Responsive design for desktop and mobile.
-
-**Tech Stack:** HTML, CSS, JavaScript
-
 ---
 
 ### 💰 Expense Tracker
